@@ -1,14 +1,18 @@
-import React, { createContext, useState } from 'react';
+// import React, { createContext, useState } from 'react';
 
-const ThemeContext = createContext();
+// const ThemeContext = createContext();
 
-const ThemeProvider = ({ children }) => {
-    const [theme, setTheme] = useState('light');
-    return (
-        <ThemeContext.Provider value={[theme, setTheme]}>
-            {children}
-        </ThemeContext.Provider>
-    );
-};
+// const ThemeProvider = ({ children }) => {
+//     const [theme, setTheme] = useState('light');
+//     return (
+//         <ThemeContext.Provider value={[theme, setTheme]}>
+//             {children}
+//         </ThemeContext.Provider>
+//     );
+// };
 
-export { ThemeContext, ThemeProvider };
+// export { ThemeContext, ThemeProvider };
+
+import React from "react";
+
+export const ThemeContext = React.createContext();
