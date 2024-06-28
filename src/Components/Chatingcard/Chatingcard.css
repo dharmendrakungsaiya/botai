@@ -9,13 +9,13 @@
     gap: 1rem;
     padding: 1rem;
     border-radius: 5px;
-    box-shadow: 0px 4px 4px 0px #00000040;
+    box-shadow: 0px 4px 4px 0px #000000;
 }
 
 .botCard{
     opacity: 0;
     animation: riseUp 250ms 250ms forwards;
-    box-shadow: 0px 4px 4px 0px #00000040;
+    box-shadow: 0px 4px 4px 0px #000000;
 }
 .chatCardImage-wrapper{
     /* width: 75px; */

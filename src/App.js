@@ -42,8 +42,21 @@ function App() {
   return (
     <>
     <ThemeContext.Provider value={[theme, setTheme]}>
-    <SideBar newChatClick={newChatClick} handleSideBar={handleSideBar} sidebarON={sidebarON} handlePastConvo={handlePastConvo}/>
-    <Body likeDislikeReply={likeDislikeReply} pastConvo={pastConvo} clearCurrentChat={clearCurrentChat} addChatMsg={addChatMsg} currentChat={currentChat} handleSideBar={handleSideBar} sidebarON={sidebarON}/>
+      <SideBar
+        newChatClick={newChatClick}
+        handleSideBar={handleSideBar}
+        sidebarON={sidebarON}
+        handlePastConvo={handlePastConvo}
+      />
+      <Body
+        likeDislikeReply={likeDislikeReply}
+        pastConvo={pastConvo}
+        clearCurrentChat={clearCurrentChat}
+        addChatMsg={addChatMsg}
+        currentChat={currentChat}
+        handleSideBar={handleSideBar}
+        sidebarON={sidebarON}
+      />
     </ThemeContext.Provider>
     </>
   );
