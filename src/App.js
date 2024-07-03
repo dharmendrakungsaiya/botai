@@ -8,6 +8,7 @@ import dislikeOutlinedIcon from "../src/dislikeblack.svg";
 import likeFilledIcon from "../src/likefilledblack.svg";
 import dislikeFilledIcon from "../src/dislikefilledblack.svg";
 import { updateByLikeDislike } from "./Function";
+import Header from './Components/Header/Header';
 
 
 function App() {
@@ -56,6 +57,12 @@ function App() {
         currentChat={currentChat}
         handleSideBar={handleSideBar}
         sidebarON={sidebarON}
+      />
+      <Header
+        currentChat={currentChat}
+        addChatMsg={addChatMsg}
+        clearCurrentChat={clearCurrentChat}
+        likeDislikeReply={likeDislikeReply}
       />
     </ThemeContext.Provider>
     </>

@@ -1,32 +1,44 @@
-.Intro{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+.Intro {
+    text-align: center;
+    padding: 20px;
 }
 
-.introQuestion{
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    flex: 1;
+.IntroTheme-light {
+    background-color: var(--secondary);
+    color: var(--color-black);
 }
-.Intro h1{
+
+.IntroTheme-dark {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.introQuestion {
+    margin-bottom: 20px;
+}
+
+.introQuestion h1 {
+    margin: 0;
+    font-size: 2rem;
     font-size: 28px;
     font-weight: 500;
     color: var(--color-black);
 }
 
+.introQuestion img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.introCards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .Intro img{
     width: 55px;
     border-radius: 50%;
-}
-
-.introCards{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }

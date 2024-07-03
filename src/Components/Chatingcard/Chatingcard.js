@@ -1,7 +1,8 @@
-
 import React, { useContext, useState} from 'react';
 import "../Chatingcard/Chatingcard.css";
 import { ThemeContext } from "../../Context";
+import likeOutlined from "../../../src/likeblack.svg";
+import dislikeOutlined from "../../../src/dislikeblack.svg";
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
 
@@ -18,8 +19,8 @@ const RatingSize = () => {
 const Thumbs = ({ likeDislikeReply, id, like, dislike }) => {
     return (
         <span className='thumbsWraper'>
-            <img src={like} alt='like button' onClick={() => likeDislikeReply(id, "like")} />
-            <img src={dislike} alt='dislike button' onClick={() => likeDislikeReply(id, "dislike")} />
+            <img src={likeOutlined} alt='like button' onClick={() => likeDislikeReply(id, "like")} />
+            <img src={dislikeOutlined} alt='dislike button' onClick={() => likeDislikeReply(id, "dislike")} />
         </span>
     );
 };
